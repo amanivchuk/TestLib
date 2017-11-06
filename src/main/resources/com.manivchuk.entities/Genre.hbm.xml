@@ -5,11 +5,8 @@
 <hibernate-mapping>
 
     <class name="com.manivchuk.entities.Genre" table="genre" schema="springlibrary">
-        <id name="id">
-            <column name="id" sql-type="bigint(20)"/>
-        </id>
-        <property name="name">
-            <column name="name" sql-type="varchar(100)" length="100"/>
-        </property>
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+
     </class>
 </hibernate-mapping>
