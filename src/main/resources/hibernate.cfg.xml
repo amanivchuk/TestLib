@@ -8,6 +8,7 @@
     <property name="hibernate.show_sql">true</property>
     <property name="connection.url">jdbc:mysql://localhost:3306/springlibrary</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
       <mapping resource="com.manivchuk.entities/Author.hbm.xml"/>
       <mapping resource="com.manivchuk.entities/Book.hbm.xml"/>
       <mapping resource="com.manivchuk.entities/Genre.hbm.xml"/>

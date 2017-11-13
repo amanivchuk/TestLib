@@ -18,7 +18,9 @@
                     <h:inputText id="search_string" styleClass="search-text"/>
                     <p:commandButton id="btnSearch" value="#{msg.search}" styleClass="button"/>
                     <div class="dropdown">
-                        <h:selectOneMenu id="search_select"/>
+                        <h:selectOneMenu id="search_select" styleClass="select_search" value="#{utils.selectedSearchType}">
+                            <f:selectItems value="${utils.searchTypeList}"/>
+                        </h:selectOneMenu>
                     </div>
                     <script language="javascript">
                         document.getElementById("search_form:search_string").setAttribute("placeholder","#{msg.search_book}");
